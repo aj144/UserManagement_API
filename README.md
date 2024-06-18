@@ -61,8 +61,28 @@ Send a POST request to `http://localhost:8181/api/user/register` with the follow
 }
 
 ```
-- Response: Returns HTTP status 200 OK upon successful registration.## Fetch User
+### Curl Command
 
+#### Description
+
+Send a POST request to register a user with the specified JSON body.
+
+### Command
+
+```bash
+curl -X POST \
+  http://localhost:8181/api/user/register \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "username": "john_doe",
+    "email": "john.doe@example.com",
+    "password": "securepassword"
+  }'
+
+
+```
+- Response: Returns HTTP status 200 OK upon successful registration.## Fetch User
+## fetch API
 - **Endpoint:** `GET /api/user/fetch`
   
 - **Description:** Fetch user details by username.
@@ -71,6 +91,19 @@ Send a POST request to `http://localhost:8181/api/user/register` with the follow
   
 - **Request Parameters:**
   - `username`: Username of the user to fetch.
+    
+  ***Curl Command to Fetch user details by username using Basic Authentication.
+
+#### Curl Command
+
+```bash
+curl -X GET \
+  http://localhost:8181/api/user/fetch \
+  -u user:1234 \
+  -d 'username=username'
+
+```
+
   
 - **Response:**
 
