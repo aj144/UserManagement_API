@@ -94,7 +94,7 @@ curl -X POST \
     
   ***Curl Command to Fetch user details by username using Basic Authentication.
 
-#### Curl Command
+### Curl Command
 
 ```bash
 curl -X GET \
