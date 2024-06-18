@@ -9,7 +9,7 @@ This project implements a User Management REST API with Spring Boot, utilizing S
 - Postman (for testing API endpoints)
 ## Steps to Run the Application
 ### 1.Clone the Repository
-git clone https://github.com/your-username/user-management-api.git
+git clone https://github.com/aj144/UserManagement_API.git
 cd user-management-api
 OR
  - Downlode the zip file and unzip
